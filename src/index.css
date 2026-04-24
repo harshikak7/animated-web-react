@@ -10,3 +10,27 @@
     font-family: font2;
     src: url(../public/fonts/Lausanne-700.woff2);
 }
+
+.moveX{
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: moveAnimation;
+    transition: all 0.3s ease;
+}
+
+.moveLink{
+    opacity: 0;
+}
+
+.link:hover .moveLink{
+    opacity: 1;
+}
+@keyframes moveAnimation{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

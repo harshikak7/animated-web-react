@@ -20,7 +20,7 @@ const Navbar = () => {
       }}
       onMouseLeave={()=>{
         navRef.current.style.height='0%'
-      }} className='relative h-18  w-80 top-0 bg-black '>
+      }} className='relative h-14  w-60 top-0 bg-black '>
         
         <div ref={navRef} className='absolute transition-all duration-300 h-18 w-80 top-0 bg-blue-400'></div>
         {/* hamburger */}

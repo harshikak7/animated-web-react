@@ -4,13 +4,15 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Agents from './pages/Agents'
 import Navbar from './components/Navigation/Navbar'
+import FullScreenNav from './components/Navigation/FullScreenNav'
 
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Routes>
+      {/* <FullScreenNav /> */}
+     <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/agents' element={<Agents />} />
