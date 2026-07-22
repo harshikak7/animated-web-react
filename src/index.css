@@ -11,6 +11,8 @@
     src: url(../public/fonts/Lausanne-700.woff2);
 }
 
+
+
 .moveX{
     animation-duration: 10s;
     animation-iteration-count: infinite;

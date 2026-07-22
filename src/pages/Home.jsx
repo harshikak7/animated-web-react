@@ -1,20 +1,30 @@
-import React from 'react'
-import Video from '../components/home/Video'
-import HomeHeroText from '../components/home/HomeHeroText'
-import HomeBottom from '../components/home/HomeBottom'
+import React from "react";
+import Video from "../components/home/Video";
+import HomeHeroText from "../components/home/HomeHeroText";
+import HomeBottom from "../components/home/HomeBottom";
 
 const Home = () => {
   return (
-    <div>
-      <div className="h-screen w-screen fixed">
+    <section className="relative h-screen w-full overflow-hidden">
+
+      {/* Background Video */}
+      <div className="absolute inset-0">
         <Video />
       </div>
-      <div className='h-screen w-screen relative pb-5 overflow-hidden flex flex-col justify-between'>
-        <HomeHeroText />
-        <HomeBottom />
-      </div>
-    </div>
-  )
-}
 
-export default Home
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/35"></div>
+
+      {/* Content */}
+      <div className="relative z-10 h-full flex flex-col justify-between">
+
+        <HomeHeroText />
+
+        <HomeBottom />
+
+      </div>
+    </section>
+  );
+};
+
+export default Home;

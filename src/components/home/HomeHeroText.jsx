@@ -1,24 +1,44 @@
-import React from 'react'
-import Video from './Video'
+import React from "react";
+import Video from "./Video";
 
 const HomeHeroText = () => {
   return (
-    <div className='font-[font1] pt-5 text-center text-white'>
-      <div className='text-[9vw] justify-center flex items-center uppercase leading-[8vw]'>
-        L'étincelle
-      </div>
-      <div className='text-[9vw] justify-center flex items-center uppercase leading-[8vfw]'>
-        qui
-        <div className='h-[8vw] w-[14vw] rounded-full mt-4 overflow-hidden '>
-          <Video/>
-        </div>
-        génère
-      </div>
-      <div className='text-[9vw] justify-center flex items-center uppercase leading-[10vw]'>
-        la créativité
-      </div>
-    </div>
-  )
-}
+    <section className="flex-1 flex items-center justify-center">
 
-export default HomeHeroText
+      <div className="text-white text-center font-[font1] uppercase">
+
+        <h1 className="text-[clamp(3rem,8vw,9rem)] leading-[0.9]">
+          L'étincelle
+        </h1>
+
+        <div className="flex justify-center items-center leading-[0.9]">
+
+          <span className="text-[clamp(3rem,8vw,9rem)]">
+            Qui
+          </span>
+
+          <div className="mx-3 rounded-full overflow-hidden
+            w-[clamp(90px,13vw,220px)]
+            h-[clamp(55px,7vw,130px)]">
+
+            <Video />
+
+          </div>
+
+          <span className="text-[clamp(3rem,8vw,9rem)]">
+            Génère
+          </span>
+
+        </div>
+
+        <h1 className="text-[clamp(3rem,8vw,9rem)] leading-[0.9]">
+          La Créativité
+        </h1>
+
+      </div>
+
+    </section>
+  );
+};
+
+export default HomeHeroText;

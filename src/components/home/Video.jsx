@@ -1,12 +1,18 @@
-import React from 'react'
-import heroVideo from '../../assets/hero-video.mp4'
+import React from "react";
+import heroVideo from "../../assets/hero-video.mp4";
 
 const Video = () => {
   return (
-    <div className='h-full w-full'>
-        <video className='w-full h-full object-cover' autoPlay loop muted src={heroVideo}></video>
-    </div>
-  )
-}
+    <video
+      className="w-full h-full object-cover"
+      autoPlay
+      muted
+      loop
+      playsInline
+    >
+      <source src={heroVideo} type="video/mp4" />
+    </video>
+  );
+};
 
-export default Video
+export default Video;

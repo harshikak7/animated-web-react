@@ -1,17 +1,40 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const HomeBottom = () => {
   return (
-    <div className='font-[font1] flex items-center justify-center gap-2 text-white'>
-      <div className='border-3 leading-[4vw] border-white rounded-full px-10 pt-4 uppercase hover:border-amber-700 hover:text-amber-600'>
-        <Link to='/projects' className='text-[4vw]'>Projects</Link>
-      </div>
-      <div className='border-3 leading-[4vw] border-white rounded-full px-10 pt-4 uppercase hover:border-amber-700 hover:text-amber-600'>
-        <Link to='/agents' className='text-[4vw]'>Agents</Link>
-      </div>
-    </div>
-  )
-}
+    <div className="pb-8 flex justify-center gap-4">
 
-export default HomeBottom
+      <Link
+        to="/projects"
+        className="border border-white rounded-full
+        px-8 py-3
+        uppercase
+        text-white
+        text-base md:text-lg
+        hover:bg-white
+        hover:text-black
+        duration-300"
+      >
+        Projects
+      </Link>
+
+      <Link
+        to="/agents"
+        className="border border-white rounded-full
+        px-8 py-3
+        uppercase
+        text-white
+        text-base md:text-lg
+        hover:bg-white
+        hover:text-black
+        duration-300"
+      >
+        Agents
+      </Link>
+
+    </div>
+  );
+};
+
+export default HomeBottom;
